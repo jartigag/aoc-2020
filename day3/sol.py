@@ -7,7 +7,9 @@ path = []
 
 incr_x,incr_y = int(sys.argv[1]), int(sys.argv[2])
 
-for i in range(incr_x,len(input),incr_x):
-    path.append(input[i][ int(i/incr_x)*incr_y % len(input[i]) ])
+for i in range(incr_y,len(input),incr_y):
+    path.append(input[i][ int(i/incr_y)*incr_x % len(input[i]) ])
 
 print( path.count('#') )
+
+# ./sol.py 1 1; ./sol.py 3 1; ./sol.py 5 1; ./sol.py 7 1; ./sol.py 1 2
