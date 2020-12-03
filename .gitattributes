@@ -1,0 +1,2 @@
+# Using gitattributes: https://github.com/github/linguist#using-gitattributes
+*.html linguist-detectable=false
