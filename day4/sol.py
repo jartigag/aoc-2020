@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-input=open("input").read().split("\n\n")
+input = open("input").read().split("\n\n")
 input = [dict(kv.split(':') for kv in line.split()) for line in input]
 
 def validate_minmax(val,min,max,digits=0):
@@ -30,7 +30,7 @@ for passport in input:
 
                 if '#'==passport['hcl'][0] and validate_minmax(passport['hcl'][1:],0x000000,0xffffff,6):
 
-                    if any(c in passport['ecl'] for c in ['amb','blu','brn','gry','grn','hzl','oth']):
+                    if any(c==passport['ecl'] for c in ['amb','blu','brn','gry','grn','hzl','oth']):
 
                         if passport['pid'].isnumeric() and validate_minmax(passport['pid'],0,999999999,9):
 
