@@ -1,8 +1,10 @@
 # extra
 
-`#viz` [Seats on the plane](https://www.reddit.com/r/adventofcode/comments/k75oj1/2020_day_5_so_i_decided_to_visualise_the_input_of/)
+`#viz` [Boarding the plane (asciinema)](https://www.reddit.com/r/adventofcode/comments/k72ru2/2020_day_5_boarding_the_plane/)
 
-[![](https://i.redd.it/6ru6ouzgpc361.png)](https://www.reddit.com/r/adventofcode/comments/k75oj1/2020_day_5_so_i_decided_to_visualise_the_input_of/)
+[![](https://asciinema.org/a/377408.svg)](https://asciinema.org/a/377408)
+
+working code: [viz.py](viz.py)
 
 `#viz` [Boarding visualization made with curses](https://www.reddit.com/r/adventofcode/comments/k7bea0/2020_day_5python_boarding_visualization_made_with/)
 
