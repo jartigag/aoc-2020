@@ -14,4 +14,4 @@ seatids = [seatid( seatcode2rowcolumn(cod) ) for cod in input]
 
 print( max(seatids) )
 
-print( list( set(range(1,len(seatids))) - set(seatids) ) )
+print( *( set(range(min(seatids),max(seatids))) - set(seatids) ) )
