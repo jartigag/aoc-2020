@@ -2,16 +2,13 @@
 
 input = open("input").read().split("\n\n")
 
-sumA = 0
-for i in input:
-    sumA+=len(set(i.replace("\n","")))
-
-print(sumA)
-
-sumB = 0
-for i in input:
-    for a in set(i.replace("\n","")):
-        if all(a in w for w in i.split()):
+sumA,sumB = 0,0
+for group in input:
+    uniq_answers = set(group.replace("\n",""))
+    sumA+=len(uniq_answers)
+    for answer in uniq_answers:
+        if all(answer in member_answers for member_answers in group.split()):
             sumB+=1
 
+print(sumA)
 print(sumB)
