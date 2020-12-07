@@ -18,8 +18,8 @@ for line in input:
 eventually_shiny_gold_bag_containers = set()
 def find_containers(target):
     for bag,bagrules in rules.items():
-        #example: bag      = 'posh indigo bag',
-        #         bagrules = {'dull lime bag': 1, 'striped lavender bag': 4, 'faded silver bag': 1}
+        #example: bag      = 'pale coral bag',
+        #         bagrules = {'dim gold bag': 5, 'vibrant bronze bag': 1}
         if any(target in bagrule for bagrule in bagrules):
             eventually_shiny_gold_bag_containers.add(bag) # add this bag..
             find_containers(bag)                          # ..and recursion!
@@ -35,6 +35,8 @@ def find_how_many_inside(target, ntimes=1):
         if bag==target:
             for next_target in bagrules.keys():
                 total_bags_inside_shiny_gold_bag.append(ntimes * bagrules[next_target]) # add this bag's times * next bag's times..
+                #example: target      = 'pale coral bag'
+                #         next_target = 'dim gold bag'       2 * 5
                 find_how_many_inside(next_target, ntimes * bagrules[next_target])       # ..and recursion!
 
 find_how_many_inside('shiny gold bag')
