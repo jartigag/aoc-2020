@@ -87,10 +87,10 @@ If you'd like to hang out, I'm @ericwastl on Twitter.
 
 -->
 <body>
-<header><div><h1 class="title-global"><a href="#">Advent of Code</a></h1><nav><ul><li><a href="#">[About]</a></li><li><a href="#">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="#">[Settings]</a></li><li><a href="#">[Log Out]</a></li></ul></nav><div class="user">jartigag <span class="star-count">15*</span></div></div><div><h1 class="title-event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-event-wrap">/*</span><a href="#">2020</a><span class="title-event-wrap">*/</span></h1><nav><ul><li><a href="#">[Calendar]</a></li><li><a href="#">[AoC++]</a></li><li><a href="#">[Sponsors]</a></li><li><a href="#">[Leaderboard]</a></li><li><a href="#">[Stats]</a></li></ul></nav></div></header>
+<header><div><h1 class="title-global"><a href="#">Advent of Code</a></h1><nav><ul><li><a href="#">[About]</a></li><li><a href="#">[Events]</a></li><li><a href="https://teespring.com/stores/advent-of-code" target="_blank">[Shop]</a></li><li><a href="#">[Settings]</a></li><li><a href="#">[Log Out]</a></li></ul></nav><div class="user">jartigag <span class="star-count">16*</span></div></div><div><h1 class="title-event">&nbsp;&nbsp;<span class="title-event-wrap">0.0.0.0:</span><a href="#">2020</a><span class="title-event-wrap"></span></h1><nav><ul><li><a href="#">[Calendar]</a></li><li><a href="#">[AoC++]</a></li><li><a href="#">[Sponsors]</a></li><li><a href="#">[Leaderboard]</a></li><li><a href="#">[Stats]</a></li></ul></nav></div></header>
 
 <div id="sidebar">
-<div id="sponsor"><div class="quiet">Our <a href="/2020/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://github.com/" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">GitHub</a> - We&apos;re hiring engineers to make GitHub fast. Interested? Email fast@github.com with details of exceptional performance work you&apos;ve done in the past.</div></div>
+<div id="sponsor"><div class="quiet">Our <a href="#">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://www.scaleway.com/en/elements/" target="_blank" onclick="if(ga)ga('send','event','sponsor','sidebar',this.href);" rel="noopener">Scaleway</a> - The Cloud that makes sense. Create, deploy and scale your infrastructure in the cloud designed for Developers.</div></div>
 </div><!--/sidebar-->
 
 <main>
@@ -131,8 +131,7 @@ acc +6  |
 <p>Immediately <em>before</em> the program would run an instruction a second time, the value in the accumulator is <em><code>5</code></em>.</p>
 <p>Run your copy of the boot code. Immediately before any instruction is executed a second time, <em>what value is in the accumulator?</em></p>
 </article>
-<p>Your puzzle answer was <code>1548</code>.</p><p class="day-success">The first half of this puzzle is complete! It provides one gold star: *</p>
-<article class="day-desc"><h2 id="part2">--- Part Two ---</h2><p>After some careful analysis, you believe that <em>exactly one instruction is corrupted</em>.</p>
+<p>Your puzzle answer was <code>1548</code>.</p><article class="day-desc"><h2 id="part2">--- Part Two ---</h2><p>After some careful analysis, you believe that <em>exactly one instruction is corrupted</em>.</p>
 <p>Somewhere in the program, <em>either</em> a <code>jmp</code> is supposed to be a <code>nop</code>, <em>or</em> a <code>nop</code> is supposed to be a <code>jmp</code>. (No <code>acc</code> instructions were harmed in the corruption of this boot code.)</p>
 <p>The program is supposed to terminate by <em>attempting to execute an instruction immediately after the last instruction in the file</em>. By changing exactly one <code>jmp</code> or <code>nop</code>, you can repair the boot code and make it terminate correctly.</p>
 <p>For example, consider the same program from above:</p>
@@ -161,11 +160,12 @@ acc +6  | 6
 <p>After the last instruction (<code>acc +6</code>), the program terminates by attempting to run the instruction below the last instruction in the file.  With this change, after the program terminates, the accumulator contains the value <em><code>8</code></em> (<code>acc +1</code>, <code>acc +1</code>, <code>acc +6</code>).</p>
 <p>Fix the program so that it terminates normally by changing exactly one <code>jmp</code> (to <code>nop</code>) or <code>nop</code> (to <code>jmp</code>). <em>What is the value of the accumulator after the program terminates?</em></p>
 </article>
-<form method="post" action="8/answer"><input type="hidden" name="level" value="2"/><p>Answer: <input type="text" name="answer" autocomplete="off"/> <input type="submit" value="[Submit]"/></p></form>
-<p>Although it hasn't changed, you can still <a href="input" target="_blank">get your puzzle input</a>.</p>
+<p>Your puzzle answer was <code>1375</code>.</p><p class="day-success">Both parts of this puzzle are complete! They provide two gold stars: **</p>
+<p>At this point, you should <a href="#">return to your Advent calendar</a> and try another puzzle.</p>
+<p>If you still want to see it, you can <a href="input" target="_blank">get your puzzle input</a>.</p>
 <p>You can also <span class="share">[Share<span class="share-content">on
-  <a href="https://twitter.com/intent/tweet?text=I%27ve+completed+Part+One+of+%22Handheld+Halting%22+%2D+Day+8+%2D+Advent+of+Code+2020&amp;url=https%3A%2F%2Fadventofcode%2Ecom%2F2020%2Fday%2F8&amp;related=ericwastl&amp;hashtags=AdventOfCode" target="_blank">Twitter</a>
-  <a href="javascript:void(0);" onclick="var mastodon_instance=prompt('Mastodon Instance / Server Name?'); if(typeof mastodon_instance==='string' && mastodon_instance.length){this.href='https://'+mastodon_instance+'/share?text=I%27ve+completed+Part+One+of+%22Handheld+Halting%22+%2D+Day+8+%2D+Advent+of+Code+2020+%23AdventOfCode+https%3A%2F%2Fadventofcode%2Ecom%2F2020%2Fday%2F8'}else{return false;}" target="_blank">Mastodon</a
+  <a href="https://twitter.com/intent/tweet?text=I%27ve+completed+%22Handheld+Halting%22+%2D+Day+8+%2D+Advent+of+Code+2020&amp;url=https%3A%2F%2Fadventofcode%2Ecom%2F2020%2Fday%2F8&amp;related=ericwastl&amp;hashtags=AdventOfCode" target="_blank">Twitter</a>
+  <a href="javascript:void(0);" onclick="var mastodon_instance=prompt('Mastodon Instance / Server Name?'); if(typeof mastodon_instance==='string' && mastodon_instance.length){this.href='https://'+mastodon_instance+'/share?text=I%27ve+completed+%22Handheld+Halting%22+%2D+Day+8+%2D+Advent+of+Code+2020+%23AdventOfCode+https%3A%2F%2Fadventofcode%2Ecom%2F2020%2Fday%2F8'}else{return false;}" target="_blank">Mastodon</a
 ></span>]</span> this puzzle.</p>
 </main>
 
