@@ -1,6 +1,6 @@
 # extra
 
-`#repo` [Suspicious factorisation](https://www.reddit.com/r/adventofcode/comments/ka9pc3/2020_day_10_part_2_suspicious_factorisation)
+`#help` [Suspicious factorisation](https://www.reddit.com/r/adventofcode/comments/ka9pc3/2020_day_10_part_2_suspicious_factorisation)
 
 > I found a relation between the number of consecutive 1 voltage differences to [the Tribonacci sequence](https://oeis.org/A000073) and was able to get a solution doing simple multiplication.
 

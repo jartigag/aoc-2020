@@ -30,7 +30,7 @@ rle_encoded_diffs = run_length_encoding(diffs)
 #example: input             = [  1,    2,    5,    6,    9,  10,   11,  14,  15,  16,  17, 18 ]
 #         diffs             = [   1,    3,    1,    3,    1,   1,    3,   1,   1,   1,   1 ]
 #         rle_encoded_diffs = [(1,1),(1,3),(1,1),(1,3),     (2,1),(1,3),              (4,1)]
-#                                 k     k     k     k          k     k                   k
+#                               l k=1       l k=1            l k=1                     l k=1
 
 # so, how many times does      a row of 5 ones                          appear in `diffs`?
 # that is, how many times does key=1 and len_group=4 (4 diffs of one) appear in `rle_encoded_diffs`?
