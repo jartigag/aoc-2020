@@ -4,6 +4,10 @@
 
 > I found a relation between the number of consecutive 1 voltage differences to [the Tribonacci sequence](https://oeis.org/A000073) and was able to get a solution doing simple multiplication.
 
+`#viz` [Got power? (@GaryJGrady)](https://twitter.com/GaryJGrady/status/1337124080579973120)
+
+[![](https://pbs.twimg.com/media/Eo5rKLEXIAcE1UT?format=jpg&name=large)](https://twitter.com/GaryJGrady/status/1337124080579973120)
+
 `#repo` [Norvig's Pytudes](https://www.reddit.com/r/adventofcode/comments/ka69of/2020_day_all_norvig_pytudes/)
 
 [Advent-2020.ipynb](https://github.com/norvig/pytudes/blob/master/ipynb/Advent-2020.ipynb)
