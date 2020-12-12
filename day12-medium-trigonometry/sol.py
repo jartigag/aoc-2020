@@ -10,7 +10,6 @@ cardinal2deg = {
          'S': 180}
 
 def move(obj, dir, units):
-    #TODO: too much hacky?
     if str(dir).isnumeric(): # so direction is determined by degrees (a cardinal point)
         if dir==0:
             obj['y'] += units
@@ -26,7 +25,7 @@ def move(obj, dir, units):
     return obj
 
 def rotate_waypoint(w, deg):
-    #TODO: generalize
+    #TODO: generalize with real trigonometry
     if deg==90:
         w['x'],w['y'] = w['y'],-w['x']
     elif deg==180:
@@ -61,12 +60,12 @@ ship = {'dir': cardinal2deg['E'], 'x': 0, 'y': 0}
 for instr in nav_instructions:
     ship = next_step(ship, instr)
 
-print(f"ship={ship}. manhattan distance={abs(ship['x']) + abs(ship['y'])}" )
+print(f"ship={ship}.\nmanhattan distance={abs(ship['x']) + abs(ship['y'])}" )
 
-ship = {'dir': 'E', 'x': 0, 'y': 0}
+ship = {'x': 0, 'y': 0}
 waypoint = {'x': 10, 'y': 1}
 
 for instr in nav_instructions:
     ship, waypoint = next_step(ship, instr, waypoint)
 
-print(f"ship={ship}. manhattan distance={abs(ship['x']) + abs(ship['y'])}" )
+print(f"ship={ship}, waypoint={waypoint}.\nmanhattan distance={abs(ship['x']) + abs(ship['y'])}" )
