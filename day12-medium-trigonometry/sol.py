@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-import math
 
 input = [line.strip() for line in open("input").readlines()]
 
-nav_instructions = [ {'goto': l[0], 'units': int(l[1:])} for l in input ]
+nav_instructions = [ {'action': l[0], 'value': int(l[1:])} for l in input ]
 
 cardinal2deg = {
          'N': 0,
@@ -38,19 +37,19 @@ def rotate_waypoint(w, deg):
 
 def next_step(ship, instruction, waypoint=None):
 
-    if instruction['goto'] in ('L','R'):
-        s = -1 if instruction['goto']=='L' else 1
+    if instruction['action'] in ('L','R'):
+        s = -1 if instruction['action']=='L' else 1
         if not waypoint:
-            ship['dir'] = (ship['dir'] + s*instruction['units'])%360
+            ship['dir'] = (ship['dir'] + s*instruction['value'])%360
         else:
-            waypoint = rotate_waypoint(waypoint, (s*instruction['units'])%360)
+            waypoint = rotate_waypoint(waypoint, (s*instruction['value'])%360)
 
-    elif instruction['goto'] in cardinal2deg.keys():
+    elif instruction['action'] in cardinal2deg.keys():
         target = ship if not waypoint else waypoint
-        target = move(target, cardinal2deg[instruction['goto']], instruction['units'])
+        target = move(target, cardinal2deg[instruction['action']], instruction['value'])
 
-    elif instruction['goto']=='F':
-        ship = move(ship, ship['dir'] if not waypoint else waypoint, instruction['units'])
+    elif instruction['action']=='F':
+        ship = move(ship, ship['dir'] if not waypoint else waypoint, instruction['value'])
 
     if not waypoint:
         return ship
