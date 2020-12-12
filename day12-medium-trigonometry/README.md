@@ -6,4 +6,4 @@
 
 `#viz` [My visualization online](https://www.reddit.com/r/adventofcode/comments/kbqfrm/2020_day_12_my_visualization_online/)
 
-[![](https://external-preview.redd.it/gQPqbMHU8WKreKSycaK8v3jne5R88Qb8UEkHssgJUWw.png?width=320&crop=smart&format=pjpg&auto=webp&s=1839a9e5a887be289a2ef5a2d588e236340f34c4)](https://www.reddit.com/r/adventofcode/comments/kbqfrm/2020_day_12_my_visualization_online/)
+[![](https://external-preview.redd.it/gQPqbMHU8WKreKSycaK8v3jne5R88Qb8UEkHssgJUWw.png?width=320&crop=smart&format=pjpg&auto=webp&s=1839a9e5a887be289a2ef5a2d588e236340f34c4)](https://www.asokolov.org/advent-of-code/2020/day12.html)
