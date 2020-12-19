@@ -24,9 +24,9 @@ def apply_mask_v2(addr, mask=None):
         yield int(addr, 2)
 
 # initialize mem to a list of 2^16=65536 zeros? it would take too much memory..
-# mem_v1 = [0]*2**16 # sys.getsizeof([0]*2**16) = 0,524352MB
+# mem_v1 = [0]*2**16 # sys.getsizeof([0]*2**16) =    0.524352 MB
 # ..and 2^36=68719476736 even throws a MemError..
-# mem_v2 = [0]*2**36 # sys.getsizeof([0]*2**36) = 1099.511661GB
+# mem_v2 = [0]*2**36 # sys.getsizeof([0]*2**36) = 1099.511661 GB
 # ..so a dict is better:
 mem_v1, mem_v2 = {}, {}
 
